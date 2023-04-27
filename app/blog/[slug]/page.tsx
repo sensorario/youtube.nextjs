@@ -3,7 +3,10 @@ import React from "react";
 
 export default function Page() {
     return <React.Fragment>
-        <h1>Linking and Navigating</h1>
-        <Link href={"/segmento"}>Segmento</Link>
+        <h1>Blog Post</h1>
+        <Link href={"/"}>Home</Link>
+        <article>
+            <title>Hello</title>
+        </article>
     </React.Fragment>
 }
