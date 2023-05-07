@@ -15,7 +15,7 @@ export default function RootLayout({ children }) {
                     <li><Link href="/blog">Blog</Link></li>
                     <li><Link href="/contatti">Contatti</Link></li>
                 </ul>
-                <div id="main-root">{children}</div>
+                <div id="primo-root">{children}</div>
             </body>
         </html>
     )
