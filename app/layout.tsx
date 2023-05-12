@@ -1,20 +1,14 @@
-import Link from "next/link"
 import React from "react"
 
 export const metadata = {
-    title: 'next || 005 || route groups'
+    title: 'next || 006 || dynamic routes'
 }
 
 export default function RootLayout({ children }) {
     return (
         <html lang="en">
             <body>
-                <h1>Route groups</h1>
-                <ul>
-                    <li><Link href="/">Home</Link></li>
-                    <li><Link href="/blog">Blog</Link></li>
-                    <li><Link href="/contatti">Contatti</Link></li>
-                </ul>
+                <h1>Dynamic routes</h1>
                 <div id="main-root">{children}</div>
             </body>
         </html>
