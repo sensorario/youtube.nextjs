@@ -1,7 +1,14 @@
-import React from "react";
+'use client'
+
+import React, { useState } from "react";
 
 export default function Page() {
+    const [state, setState] = useState(false)
+    if (state === true) {
+        throw new Error('!!!');
+    }
     return <>
-        <h2>Loading UI and Streaming</h2>
+        <h2>Parallel routes</h2>
+        <button onClick={() => setState(true)}>crash</button>
     </>
 }
