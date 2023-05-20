@@ -1,16 +1,22 @@
-import Link from "next/link"
-import React from "react"
+'use client'
 
-export const metadata = {
-    title: 'next.js tutorial',
-}
+import React, { useState } from "react"
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children, login, dashboard }) {
+    const isLoggedIn = true
+    
+    const slot = isLoggedIn
+        ? dashboard
+        : login
+
     return (
         <html lang="en">
             <body>
                 <h1>Next.js tutorial</h1>
-                <div id="main-root">{children}</div>
+                <div className="container">
+                    <div id="children-container">{children}</div>
+                    <div id="slot-container">{slot}</div>
+                </div>
             </body>
         </html>
     )
