@@ -8,7 +8,7 @@ export default function RootLayout({ children }) {
         <html lang="en">
             <body>
                 <h1>Next.js tutorial</h1>
-                <Link href="/">home</Link>
+                [<Link href="/">home</Link>]
                 <div className="container">{children}</div>
             </body>
         </html>

@@ -4,6 +4,6 @@ import React  from "react";
 
 export default function Page({  }) {
     return <>
-        <h2>Middlewares</h2>
+        <h2>Io sono altra pagina</h2>
     </>
 }
